@@ -1,0 +1,5009 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.titulo{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.tituloprincipal{
+    position: absolute;
+    top:55px;
+    left:25%;
+    font-family: Lucida Calligraphy;
+    font-size: 70px;
+    color:black;
+}
+
+.piedepagina{
+    position: absolute;
+    top:550px;
+    left:37%;
+    font-family: Lucida Calligraphy;
+    font-size: 20px;
+    color:black;
+}
+
+.tituloprincipalbiografia{
+    position: absolute;
+    top:0px;
+    left:200px;
+    font-family: Lucida Calligraphy;
+    font-size: 70px;
+    color:black;
+}
+.tituloprincipaldiscografia{
+    position: absolute;
+    top:0px;
+    left:150px;
+    font-family: Lucida Calligraphy;
+    font-size: 70px;
+    color:black;
+}
+
+.tituloprincipalbiografia1{
+    position: absolute;
+    top:0px;
+    left:150px;
+    font-family: Lucida Calligraphy;
+    font-size: 70px;
+    color:black;
+}
+
+
+
+.logo{
+  position:absolute;
+  height:100px;
+  width:100px;
+  top: 20px;
+  left : 20px;
+  z-index: 1;
+}
+.logo1{
+    position:absolute;
+    height:90px;
+    width:90px;
+    top: 10px;
+    left : 20px;
+    z-index: 1;
+  }
+
+.fondobiografia{
+    position:absolute;
+    margin-top: 100px;
+}
+
+.fondomusica{
+    position:absolute;
+    margin-top: 100px;
+}
+
+.contenedor-botones{
+    display: grid;
+    width: 100px;
+    grid-template-columns: repeat(3,    1fr);
+    gap: 40px;
+}
+
+.boton-biografia{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #CC00FF;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:200px;
+    top: 200px;
+    left : 500px;
+    overflow: hidden;
+    
+}
+
+.boton-biografia::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-biografia:hover::after{
+    transform: scale(200);
+    background: #FF33FF;
+}
+
+.boton-biografia:hover{
+    background: #FF0099;
+}
+
+.boton-biografia span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+
+.boton-canciones{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #CC00FF;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:200px;
+    top: 270px;
+    left : 500px;
+    overflow: hidden;
+    
+}
+
+.boton-canciones::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-canciones:hover::after{
+    transform: scale(200);
+    background: #FF33FF;
+}
+
+.boton-canciones:hover{
+    background: #FF0099;
+}
+
+.boton-canciones span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.boton-canciones-1{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #CC00FF;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:150px;
+    top: 25px;
+    left : 800px;
+    overflow: hidden;
+    
+}
+
+.boton-canciones-1::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-canciones-1:hover::after{
+    transform: scale(200);
+    background: #FF33FF;
+}
+
+.boton-canciones-1:hover{
+    background: #FF0099;
+}
+
+.boton-canciones-1 span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.boton-biografia-1{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #CC00FF;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:150px;
+    top: 25px;
+    left : 800px;
+    overflow: hidden;
+    
+}
+
+.boton-biografia-1::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-biografia-1:hover::after{
+    transform: scale(200);
+    background: #FF33FF;
+}
+
+.boton-biografia-1:hover{
+    background: #FF0099;
+}
+
+.boton-biografia-1 span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.boton-canciones-2{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #CC00FF;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:150px;
+    top: 25px;
+    left : 975px;
+    overflow: hidden;
+    
+}
+
+.boton-canciones-2::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-canciones-2:hover::after{
+    transform: scale(200);
+    background: #FF33FF;
+}
+
+.boton-canciones-2:hover{
+    background: #FF0099;
+}
+
+.boton-canciones-2 span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.boton-galeriafotos-1{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #CC00FF;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:150px;
+    top: 25px;
+    left : 975px;
+    overflow: hidden;
+    
+}
+
+.boton-galeriafotos-1::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-galeriafotos-1:hover::after{
+    transform: scale(200);
+    background: #FF33FF;
+}
+
+.boton-galeriafotos-1:hover{
+    background: #FF0099;
+}
+
+.boton-galeriafotos-1 span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.boton-comentarios-1{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #CC00FF;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:150px;
+    top: 25px;
+    left : 1150px;
+    overflow: hidden;
+    
+}
+
+.boton-comentarios-1::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-comentarios-1:hover::after{
+    transform: scale(200);
+    background: #FF33FF;
+}
+
+.boton-comentarios-1:hover{
+    background: #FF0099;
+}
+
+.boton-comentarios-1 span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.boton-musica-1{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #CC00FF;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:150px;
+    top: 25px;
+    left : 1150px;
+    overflow: hidden;
+    
+}
+
+.boton-musica-1::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-musica-1:hover::after{
+    transform: scale(200);
+    background: #FF33FF;
+}
+
+.boton-musica-1:hover{
+    background: #FF0099;
+}
+
+.boton-musica-1 span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.boton-inicio{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #CC00FF;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:150px;
+    top: 25px;
+    left : 630px;
+    overflow: hidden;
+    
+}
+
+.boton-inicio::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-inicio:hover::after{
+    transform: scale(200);
+    background: #FF33FF;
+}
+
+.boton-inicio:hover{
+    background: #FF0099;
+}
+
+.boton-inicio span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+
+.boton-galeriafotos{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #CC00FF;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:200px;
+    top: 340px;
+    left : 500px;
+    overflow: hidden;
+    
+}
+
+.boton-galeriafotos::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-galeriafotos:hover::after{
+    transform: scale(200);
+    background: #FF33FF;
+}
+
+.boton-galeriafotos:hover{
+    background: #FF0099;
+}
+
+.boton-galeriafotos span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+
+.boton-calificanos{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #CC00FF;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:200px;
+    top: 530px;
+    left : 30px;
+    overflow: hidden;
+    
+}
+
+.boton-calificanos::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-calificanos:hover::after{
+    transform: scale(200);
+    background: #FF33FF;
+}
+
+.boton-calificanos:hover{
+    background: #FF0099;
+}
+
+.boton-calificanos span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+
+.boton-noticias{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #CC00FF;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:200px;
+    top: 470px;
+    left : 1110px;
+    overflow: hidden;
+    
+}
+
+.boton-noticias::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-noticias:hover::after{
+    transform: scale(200);
+    background: #FF33FF;
+}
+
+.boton-noticias:hover{
+    background: #FF0099;
+}
+
+.boton-noticias span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+
+
+.boton-comentarios{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #CC00FF;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:200px;
+    top: 530px;
+    left : 1110px;
+    overflow: hidden;
+    
+}
+
+.boton-comentarios::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-comentarios:hover::after{
+    transform: scale(200);
+    background: #FF33FF;
+}
+
+.boton-comentarios:hover{
+    background: #FF0099;
+}
+
+.boton-comentarios span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.redes-sociales-facebook{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    position:absolute;
+    height:50px;
+    width:50px;
+    top: 20px;
+    left : 1300px;
+    background: #3300CC;
+    border-radius: 50PX;
+}
+
+.redes-sociales-facebook::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.redes-sociales-facebook:hover::after{
+    transform: scale(50);
+    background: #3399FF;
+}
+
+.redes-sociales-facebook:hover{
+    background: #33CCFF;
+}
+
+.redes-sociales-facebook span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.redes-sociales-youtube{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    position:absolute;
+    height:50px;
+    width:50px;
+    top: 80px;
+    left : 1300px;
+    background: #FF0000;
+    border-radius: 50PX;
+}
+
+.redes-sociales-youtube::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.redes-sociales-youtube:hover::after{
+    transform: scale(50);
+    background: #FF3300;
+}
+
+.redes-sociales-youtube:hover{
+    background: #CC0033;
+}
+
+.redes-sociales-youtube span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.redes-sociales-twitter{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    position:absolute;
+    height:50px;
+    width:50px;
+    top: 140px;
+    left : 1300px;
+    background: #66CCFF;
+    border-radius: 50PX;
+}
+
+.redes-sociales-twitter::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.redes-sociales-twitter:hover::after{
+    transform: scale(50);
+    background: #66FFFF;
+}
+
+.redes-sociales-twitter:hover{
+    background: #6699FF;
+}
+
+.redes-sociales-twitter span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.redes-sociales-instagram{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    position:absolute;
+    height:50px;
+    width:50px;
+    top: 200px;
+    left : 1300px;
+    background: #6633CC;
+    border-radius: 50PX;
+}
+
+.redes-sociales-instagram::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.redes-sociales-instagram:hover::after{
+    transform: scale(50);
+    background: #FF0099;
+}
+
+.redes-sociales-instagram:hover{
+    background: #FF6600;
+}
+
+.redes-sociales-instagram span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.texto-biografia{
+    margin-top: 480px;
+    font-family: Bahnschrift;
+    font-size: 20px;
+}
+
+.texto-biografia{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.titulocanciones1{
+    margin-top: 480px;
+    font-family: Bahnschrift;
+    font-size: 30px;
+    color:#C71585;
+}
+
+.titulocanciones1{
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.foto1{
+    border-radius: 10px;
+    border: 3px solid #000000;
+    float: right;
+    margin: 10px 0px 10px 20px;
+
+}
+
+.foto2{
+    border-radius: 10px;
+    border: 3px solid #000000;
+    float: right;
+    margin: 10px 0px 10px 20px;
+
+}
+
+.foto3{
+    border-radius: 10px;
+    border: 3px solid #000000;
+    float: left;
+    margin: 10px 15px 10px 20px;
+
+}
+.foto4{
+    border-radius: 10px;
+    border: 3px solid #000000;
+    margin: 0 auto;
+    display: block;
+}
+
+.fondonoticia{
+    float: center;  
+    border-radius: 10px; 
+    height:560px; 
+    width:1298px; 
+    border: 3px solid #000000; 
+    margin: 20px 0px 10px 20px;
+}
+
+.boton-volver{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #CC00FF;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:150px;
+    top: 2180px;
+    left : 600px;
+    overflow: hidden;
+    
+}
+
+.boton-volver::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-volver:hover::after{
+    transform: scale(200);
+    background: #FF33FF;
+}
+
+.boton-volver:hover{
+    background: #FF0099;
+}
+
+.boton-volver span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.boton-volver1{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #CC00FF;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:150px;
+    top: 2450px;
+    left : 600px;
+    overflow: hidden;
+    
+}
+
+.boton-volver1::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-volver1:hover::after{
+    transform: scale(200);
+    background: #FF33FF;
+}
+
+.boton-volver1:hover{
+    background: #FF0099;
+}
+
+.boton-volver1 span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.boton-volver2{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #CC00FF;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:150px;
+    top: 1900px;
+    left : 600px;
+    overflow: hidden;
+    
+}
+
+.boton-volver2::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-volver2:hover::after{
+    transform: scale(200);
+    background: #FF33FF;
+}
+
+.boton-volver2:hover{
+    background: #FF0099;
+}
+
+.boton-volver2 span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+
+.video1{
+    text-align:center;
+}
+
+.video2{
+    text-align:center;
+}
+
+.foto8{
+    text-align: left;
+    margin-left: 100px;
+}
+
+.foto9{
+    text-align: right;
+    margin-left: 0px;
+}
+
+.texto-imagen1{
+    text-align:center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.galeriafotos{
+   margin: 10px 20px;
+   box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0,0,0,0.19);
+   float: left;
+   width: 300px;
+   position:absolute;
+   top: 500px;
+   left: 100px; 
+}
+
+.galeriafotos img{
+    width: 100%;
+    height: auto;
+}
+
+.galeriafotos:hover{
+    border: 1px solid lightcoral;
+    transform: rotate(-3deg);
+}
+
+.pie{
+    text-align: center;
+    text-shadow: 2px 2px 5px purple;
+    padding: 10px;
+}
+
+.galeriafotos1{
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0,0,0,0.19);
+    float: left;
+    width: 300px;
+    position:absolute;
+    top: 500px;
+    left: 500px;
+ }
+ 
+ .galeriafotos1 img{
+     width: 100%;
+     height: auto;
+ }
+ 
+ .galeriafotos1:hover{
+     border: 1px solid lightcoral;
+     transform: rotate(-3deg);
+ }
+
+ .galeriafotos2{
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0,0,0,0.19);
+    float: left;
+    width: 260px;
+    height: 300px;
+    position:absolute;
+    top: 500px;
+    left: 900px;
+ }
+ 
+ .galeriafotos2 img{
+     width: 100%;
+     height: auto;
+ }
+ 
+ .galeriafotos2:hover{
+     border: 1px solid lightcoral;
+     transform: rotate(-3deg);
+ }
+ 
+ .galeriafotos3{
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0,0,0,0.19);
+    float: left;
+    width: 300px;
+    position:absolute;
+    top: 900px;
+    left: 100px; 
+ }
+ 
+ .galeriafotos3 img{
+     width: 100%;
+     height: auto;
+ }
+ 
+ .galeriafotos3:hover{
+     border: 1px solid lightcoral;
+     transform: rotate(-3deg);
+ }
+
+ .galeriafotos4{
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0,0,0,0.19);
+    float: left;
+    width: 300px;
+    position:absolute;
+    top: 900px;
+    left: 500px; 
+ }
+ 
+ .galeriafotos4 img{
+     width: 100%;
+     height: auto;
+ }
+ 
+ .galeriafotos4:hover{
+     border: 1px solid lightcoral;
+     transform: rotate(-3deg);
+ }
+
+.foto13{
+    border-radius: 10px;
+    border: 3px solid #00FA9A;
+    float: left;
+    margin: 20px 20px 20px 20px;
+}
+
+.foto14{
+    border-radius: 10px;
+    border: 3px solid #4169E1;
+    float: left;
+    margin: 20px 10px 20px 20px;
+}
+
+.foto15{
+    border-radius: 10px;
+    border: 3px solid #FF6347;
+    float: left;
+    margin: 20px 10px 20px 20px;
+}
+
+.foto16{
+    border-radius: 10px;
+    border: 3px solid #216b64;
+    float: left;
+    margin: 20px 10px 20px 20px;
+}
+
+.foto17{
+    border-radius: 10px;
+    border: 3px solid #BA55D3;
+    float: left;
+    margin: 20px 10px 20px 20px;
+}
+
+.rating1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+}
+
+.rating:not(:checked)>input{
+    position: absolute;
+    appearance: none;
+}
+
+.rating:not(:checked)>label{
+    float: right;
+    cursor: pointer;
+    font-size: 80px;
+    color:#666;
+}
+
+.rating:not(:checked)>label::before{
+    content: '★';
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #E58E09;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color:#FF9E0B;
+}
+
+.rating > input:checked ~ label{
+    color: #FFA723;
+}
+
+.redes-sociales-facebook1{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    position:absolute;
+    height:50px;
+    width:50px;
+    top: 500px;
+    left : 555px;
+    background: #3300CC;
+    border-radius: 50PX;
+}
+
+.redes-sociales-facebook1::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.redes-sociales-facebook1:hover::after{
+    transform: scale(50);
+    background: #3399FF;
+}
+
+.redes-sociales-facebook1:hover{
+    background: #33CCFF;
+}
+
+.redes-sociales-facebook1 span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.redes-sociales-youtube1{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    position:absolute;
+    height:50px;
+    width:50px;
+    top: 500px;
+    left : 615px;
+    background: #FF0000;
+    border-radius: 50PX;
+}
+
+.redes-sociales-youtube1::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.redes-sociales-youtube1:hover::after{
+    transform: scale(50);
+    background: #FF3300;
+}
+
+.redes-sociales-youtube:hover{
+    background: #CC0033;
+}
+
+.redes-sociales-youtube1 span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.redes-sociales-twitter1{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    position:absolute;
+    height:50px;
+    width:50px;
+    top: 500px;
+    left : 675px;
+    background: #66CCFF;
+    border-radius: 50PX;
+}
+
+.redes-sociales-twitter1::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.redes-sociales-twitter1:hover::after{
+    transform: scale(50);
+    background: #66FFFF;
+}
+
+.redes-sociales-twitter1:hover{
+    background: #6699FF;
+}
+
+.redes-sociales-twitter1 span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.redes-sociales-instagram1{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    position:absolute;
+    height:50px;
+    width:50px;
+    top: 500px;
+    left : 735px;
+    background: #6633CC;
+    border-radius: 50PX;
+}
+
+.redes-sociales-instagram1::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.redes-sociales-instagram1:hover::after{
+    transform: scale(50);
+    background: #FF0099;
+}
+
+.redes-sociales-instagram1:hover{
+    background: #FF6600;
+}
+
+.redes-sociales-instagram1 span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.form{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 221vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 440px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+label{
+    color:#283629;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+
+
+input, textarea{
+    padding: 17px 25px;
+    margin-bottom: 30px;
+    background-color: #EDFFF0;
+    border: 2px solid #f0faf1;
+    color:#283629;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder{
+    color:#cab5c5;
+
+}
+
+.form-txt{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.form-txt a {
+    color:#76b28e;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: #f37bf3;
+}
+
+@media(max-width:991px){
+    body{
+        padding: 30px;
+    }
+    form{
+        padding: 50px 30px;
+        width: 100%;
+    }
+    input{
+        padding: 15px;
+    }
+}
+
+.imagenform{
+    position:absolute;
+    height:160px;
+    width:160px;
+    top: 206px;
+    left : 580px;
+    z-index: 1;
+}
+
+.imagenform1{
+    position:absolute;
+    height:390px;
+    width:320px;
+    top: 630px;
+    left : 900px;
+    z-index: 1;
+  }
+
+  .fotonoticia1{
+    position:absolute;
+    height:460px;
+    width:760px;
+    top: 606px;
+    left : 295px;
+    z-index: 1;
+}
+
+.textonoticia1{
+    font-family: Bahnschrift;
+    font-size: 20px;
+    color: #000000;
+}
+
+.textonoticia1{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.contenedor-botones-biografia{
+    display: grid;
+    width: 100px;
+    grid-template-columns: repeat(3,    1fr);
+    gap: 40px;
+}
+
+.boton-biografia-uno{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #62ff6f;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:200px;
+    top: 500px;
+    left : 350px;
+    overflow: hidden;
+    
+}
+
+.boton-biografia-uno::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-biografia-uno:hover::after{
+    transform: scale(200);
+    background: #33ffaa;
+}
+
+.boton-biografia-uno:hover{
+    background: #3ebff1;
+}
+
+.boton-biografia-uno span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+
+.boton-discografia{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #62ff6f;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:200px;
+    top: 500px;
+    left : 600px;
+    overflow: hidden;
+    
+}
+
+.boton-discografia::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-discografia:hover::after{
+    transform: scale(200);
+    background: #33ffaa;
+}
+
+.boton-discografia:hover{
+    background: #3ebff1;
+}
+
+.boton-discografia span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.boton-premiosylogros{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #62ff6f;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:200px;
+    top: 500px;
+    left : 850px;
+    overflow: hidden;
+    
+}
+
+.boton-premiosylogros::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-premiosylogros:hover::after{
+    transform: scale(200);
+    background: #33ffaa;
+}
+
+.boton-premiosylogros:hover{
+    background: #3ebff1;
+}
+
+.boton-premiosylogros span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.foto22{
+    border-radius: 10px;
+    border: 3px solid #000000;
+    float: left;
+    margin: 10px 15px 10px 20px;
+
+}
+
+.foto23{
+    border-radius: 10px;
+    border: 3px solid #000000;
+    float:right;
+    margin: 10px 15px 10px 20px;
+    
+}
+
+.foto24{
+    border-radius: 10px;
+    border: 3px solid #000000;
+    float:left;
+    margin: 10px 15px 10px 20px;
+    
+}
+
+.foto18{
+    position: absolute; 
+    top: 200px; 
+    left : 840px;
+}
+
+.boton-volver-discografia{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #CC00FF;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:150px;
+    top: 1900px;
+    left : 600px;
+    overflow: hidden;
+    
+}
+
+.boton-volver-discografia::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-volver-discografia:hover::after{
+    transform: scale(200);
+    background: #FF33FF;
+}
+
+.boton-volver-discografia:hover{
+    background: #FF0099;
+}
+
+.boton-volver-discografia span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.boton-volver-premios{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #CC00FF;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:150px;
+    top: 1655px;
+    left : 600px;
+    overflow: hidden;
+    
+}
+
+.boton-volver-premios::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-volver-premios:hover::after{
+    transform: scale(200);
+    background: #FF33FF;
+}
+
+.boton-volver-premios:hover{
+    background: #FF0099;
+}
+
+.boton-volver2noticias{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #CC00FF;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:150px;
+    top: 1655px;
+    left : 600px;
+    overflow: hidden;
+    
+}
+
+.boton-volver2noticias::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-volver2noticias:hover::after{
+    transform: scale(200);
+    background: #FF33FF;
+}
+
+.boton-volver2noticias:hover{
+    background: #FF0099;
+}
+
+.boton-volver2noticias span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.table-styled{
+    position: absolute;
+    top: 600px;
+    left: 150px;
+    overflow: hidden;
+    width: fit-content;
+    border-radius: 2rem;
+    border: 3px solid black;
+    background-color: #A076F9;
+    color: black;
+    font-family: sans-serif;
+}
+
+.table-styled table{
+    border-right: hidden;
+    border-left: hidden;
+    border-top: hidden;
+    border-bottom: hidden;
+    border-collapse: collapse;
+}
+
+.table-styled table th{
+    background-color: #6528F7;
+}
+
+.table-styled table th,
+.table-styled table td{
+    border: 2px solid black;
+    padding: 1rem 1.58rem;
+
+}
+
+
+.contenedor-botones-biografia{
+    display: grid;
+    width: 100px;
+    grid-template-columns: repeat(3,    1fr);
+    gap: 40px;
+}
+
+.boton-canciones-uno{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #62ff6f;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:200px;
+    top: 1000px;
+    left : 350px;
+    overflow: hidden;
+    
+}
+
+.boton-canciones-uno::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-canciones-uno:hover::after{
+    transform: scale(200);
+    background: #33ffaa;
+}
+
+.boton-canciones-uno:hover{
+    background: #3ebff1;
+}
+
+.boton-canciones-uno span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+
+.boton-canciones-dos{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #62ff6f;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:200px;
+    top: 1000px;
+    left : 600px;
+    overflow: hidden;
+    
+}
+
+.boton-canciones-dos::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-canciones-dos:hover::after{
+    transform: scale(200);
+    background: #33ffaa;
+}
+
+.boton-canciones-dos:hover{
+    background: #3ebff1;
+}
+
+.boton-canciones-dos span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.boton-canciones-tres{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #62ff6f;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:200px;
+    top: 1000px;
+    left : 850px;
+    overflow: hidden;
+    
+}
+
+.boton-canciones-tres::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-canciones-tres:hover::after{
+    transform: scale(200);
+    background: #33ffaa;
+}
+
+.boton-canciones-tres:hover{
+    background: #3ebff1;
+}
+
+.boton-canciones-tres span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.texto-cancionuno{
+    font-family: Bahnschrift;
+    font-size: 20px;
+    color: #000000;
+}
+
+.texto-cancionuno{
+    text-align:center;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.boton-volvercanciones1{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #CC00FF;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:150px;
+    top: 2740px;
+    left : 600px;
+    overflow: hidden;
+    
+}
+
+.boton-volvercanciones1::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-volvercanciones1:hover::after{
+    transform: scale(200);
+    background: #FF33FF;
+}
+
+.boton-volvercanciones1:hover{
+    background: #FF0099;
+}
+
+.boton-volvercanciones1 span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.boton-volvercanciones2{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #CC00FF;
+    color: #000000;
+    font-family: Segoe UI Black;
+    font-size: 18px;
+    font-weight: 300px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position:absolute;
+    height:50px;
+    width:150px;
+    top: 2470px;
+    left : 600px;
+    overflow: hidden;
+    
+}
+
+.boton-volvercanciones2::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100PX;
+    transform-origin: center;
+}
+
+.boton-volvercanciones2:hover::after{
+    transform: scale(200);
+    background: #FF33FF;
+}
+
+.boton-volvercanciones2:hover{
+    background: #FF0099;
+}
+
+.boton-volvercanciones2 span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+/* PAGINA PRINCIPAL*/
+/* 480*/
+
+@media (min-width: 480px) and (max-width:500px){
+   
+    .logo{
+        height:90px;
+        width:90px;
+        top: 20px;
+        left : 20px;
+    }
+    .fondoprincipal{
+        width: 480px;
+        margin-top: 110px;
+    }
+    .tituloprincipal{
+        font-size: 45px;
+        left: 120px;
+        top:40px;
+    }
+    .boton-biografia{
+        top:150px;
+        left:70px;
+        height:50px;
+        width:150px;
+        font-size: 15px;
+    }
+    .boton-canciones{
+        top: 210px;
+        left:70px;
+        height:50px;
+        width:150px;
+        font-size: 15px;
+    }
+    .boton-galeriafotos{
+        top: 270px;
+        left:70px;
+        height:50px;
+        width:150px;
+        font-size: 15px;
+    }
+    .boton-noticias{
+        top: 330px;
+        left: 70px;
+        height:50px;
+        width:150px;
+        font-size: 15px;
+    }
+    .boton-comentarios{
+        top: 390px;
+        left: 70px;
+        height:50px;
+        width:150px;
+        font-size: 15px;
+    }
+
+    .boton-calificanos{
+        top: 450px;
+        left: 70px;
+        height:50px;
+        width:150px;
+        font-size: 15px;
+    }
+
+    .redes-sociales-facebook{
+        top: 560px;
+        left: 145px;
+    }
+
+    .redes-sociales-youtube{
+        top: 560px;
+        left: 210px;
+    }
+
+    .redes-sociales-twitter{
+        top: 560px;
+        left: 275px;
+    }
+
+    .redes-sociales-instagram{
+        top: 560px;
+        left: 338px;
+    }
+
+    .piedepagina{
+        top:650px;
+        left:17%;
+    }
+}
+
+/* PAGINA PRINCIPAL*/
+/* 768*/
+   
+@media (min-width: 768px) {
+   
+    .logo{
+        height:100px;
+        width:100px;
+        top: 20px;
+        left : 20px;
+    }
+    .fondoprincipal{
+        width: 768px;
+        margin-top: 110px;
+    }
+    .tituloprincipal{
+        font-size: 55px;
+        left: 155px;
+        top:40px;
+    }
+    .boton-biografia{
+        top:150px;
+        left:150px;
+        height:50px;
+        width:180px;
+        font-size: 20px;
+    }
+    .boton-canciones{
+        top: 210px;
+        left:150px;
+        height:50px;
+        width:180px;
+        font-size: 20px;
+    }
+    .boton-galeriafotos{
+        top: 270px;
+        left:150px;
+        height:50px;
+        width:180px;
+        font-size: 20px;
+    }
+    .boton-noticias{
+        top: 330px;
+        left: 150px;
+        height:50px;
+        width:180px;
+        font-size: 20px;
+    }
+    .boton-comentarios{
+        top: 390px;
+        left: 150px;
+        height:50px;
+        width:180px;
+        font-size: 20px;
+    }
+
+    .boton-calificanos{
+        top: 450px;
+        left: 150px;
+        height:50px;
+        width:180px;
+        font-size: 20px;
+    }
+
+    .redes-sociales-facebook{
+        top: 560px;
+        left: 145px;
+    }
+
+    .redes-sociales-youtube{
+        top: 560px;
+        left: 210px;
+    }
+
+    .redes-sociales-twitter{
+        top: 560px;
+        left: 275px;
+    }
+
+    .redes-sociales-instagram{
+        top: 560px;
+        left: 338px;
+    }
+
+    .piedepagina{
+        top:650px;
+        left:33%;
+    }
+}
+
+/* PAGINA PRINCIPAL*/
+/* 1024*/
+   
+@media (min-width: 1024px)  {
+   
+    .logo{
+        height:100px;
+        width:100px;
+        top: 20px;
+        left : 20px;
+    }
+    .fondoprincipal{
+        width: 1024px;
+        margin-top: 10px;
+    }
+    .tituloprincipal{
+        font-size: 50px;
+        left: 250px;
+        top:40px;
+    }
+    .boton-biografia{
+        top:150px;
+        left:320px;
+        height:50px;
+        width:200px;
+        font-size: 20px;
+    }
+    .boton-canciones{
+        top: 210px;
+        left:320px;
+        height:50px;
+        width:200px;
+        font-size: 20px;
+    }
+    .boton-galeriafotos{
+        top: 270px;
+        left:320px;
+        height:50px;
+        width:200px;
+        font-size: 20px;
+    }
+    .boton-noticias{
+        top: 330px;
+        left: 320px;
+        height:50px;
+        width:200px;
+        font-size: 20px;
+    }
+    .boton-comentarios{
+        top: 390px;
+        left: 320px;
+        height:50px;
+        width:200px;
+        font-size: 20px;
+    }
+
+    .boton-calificanos{
+        top: 450px;
+        left: 320px;
+        height:50px;
+        width:200px;
+        font-size: 20px;
+    }
+
+    .redes-sociales-facebook{
+        top: 150px;
+        left: 945px;
+    }
+
+    .redes-sociales-youtube{
+        top: 210px;
+        left: 945px;
+    }
+
+    .redes-sociales-twitter{
+        top: 270px;
+        left: 945px;
+    }
+
+    .redes-sociales-instagram{
+        top: 330px;
+        left: 945px;
+    }
+
+    .piedepagina{
+        top:530px;
+        left:33%;
+    }
+}
+
+/* PAGINA PRINCIPAL*/
+/* COMPLETA*/
+   
+@media (min-width: 1355px)  {
+   
+    .logo{
+        height:100px;
+        width:100px;
+        top: 20px;
+        left : 20px;
+    }
+    .fondoprincipal{
+        width: 1355px;
+        margin-top: 10px;
+    }
+    .tituloprincipal{
+        top:55px;
+        left:25%;
+        font-size: 70px;
+    }
+    .boton-biografia{
+        font-size: 18px;
+        height:50px;
+        width:200px;
+        top: 200px;
+        left : 500px;
+    }
+    .boton-canciones{
+        font-size: 18px;
+        height:50px;
+        width:200px;
+        top: 270px;
+        left : 500px;
+    }
+    .boton-galeriafotos{
+        font-size: 18px;
+        height:50px;
+        width:200px;
+        top: 340px;
+        left : 500px;
+    }
+    .boton-noticias{
+        font-size: 18px;
+        height:50px;
+        width:200px;
+        top: 470px;
+        left : 1110px;
+    }
+    .boton-comentarios{
+        font-size: 18px;
+        height:50px;
+        width:200px;
+        top: 530px;
+        left : 1110px;
+    }
+
+    .boton-calificanos{
+        font-size: 18px;
+        height:50px;
+        width:200px;
+        top: 530px;
+        left : 30px;
+    }
+
+    .redes-sociales-facebook{
+        top: 20px;
+        left : 1300px;
+    }
+
+    .redes-sociales-youtube{
+        top: 80px;
+        left : 1300px;
+    }
+
+    .redes-sociales-twitter{
+        top: 140px;
+        left : 1300px;
+    }
+
+    .redes-sociales-instagram{
+        top: 200px;
+        left : 1300px;
+    }
+
+    .piedepagina{
+        top:550px;
+        left:37%;
+    }
+}
+
+/* BIOGRAGIA*/
+/*480*/
+
+@media (min-width: 480px) and (max-width:500px){
+   
+    .logo{
+        height:90px;
+        width:90px;
+        top: 20px;
+        left : 20px;
+    }
+
+    .tituloprincipalbiografia{
+        top:-10px;
+        left:100px;
+        font-size: 45px;
+    }
+
+    .fondobiografia{
+        width: 451px;
+    }
+
+    .boton-inicio{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 140px;
+        left : 178px;
+    }
+
+    .boton-canciones-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 200px;
+        left : 178px;
+    }
+
+    .boton-galeriafotos-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 260px;
+        left : 178px;
+    }
+
+    .boton-comentarios-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 320px;
+        left : 178px;
+    }
+
+    .boton-biografia-uno{
+        font-size: 13px;
+        height:50px;
+        width:150px;
+        top: 500px;
+        left : 20px;
+    }
+
+    .boton-discografia{
+        font-size: 13px;
+        height:50px;
+        width:150px;
+        top: 500px;
+        left : 180px;
+    }
+    .boton-premiosylogros{
+        font-size: 13px;
+        height:50px;
+        width:150px;
+        top: 500px;
+        left : 340px;
+    }
+
+    .texto-biografia{
+        margin-top: 460px;
+        font-size: 17px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .foto1{
+        width: 150px;
+        height: 200px;
+    }
+
+    .foto3{
+        width: 340px;
+        height: 240px;
+    }
+
+    .foto4{
+        width: 340px;
+        height: 210px;
+    }
+
+    .foto2{
+        width: 240px;
+        height: 190px;
+    }
+
+    .boton-volver{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 3600px;
+        left : 180px;
+    }
+
+    .tituloprincipaldiscografia{
+        top:-10px;
+        left:100px;
+        font-size: 45px;
+    }
+
+    .foto22{
+        width: 200px;
+        height: 190px;
+    }
+
+    .foto23{
+        width: 200px;
+        height: 190px;
+    }
+
+    .foto24{
+        width: 200px;
+        height: 180px;
+    }
+
+    .boton-volver-discografia{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 2840px;
+        left : 180px;
+    }
+    
+    .tituloprincipaldiscografia{
+        top:-10px;
+        left:100px;
+        font-size: 45px;
+    }
+
+    .table-styled{
+        top: 600px;
+        left: 35px;
+    }
+
+    .table-styled table th,
+    .table-styled table td{
+        font-size: 16px;
+        padding: 1rem 1.00rem;
+
+    }
+
+    .boton-volver-premios{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 2385px;
+        left : 180px;
+    }
+  }
+
+  /* BIOGRAGIA*/
+/*768*/
+
+@media (min-width: 768px){
+   
+    .logo{
+        height:90px;
+        width:90px;
+        top: 20px;
+        left : 20px;
+    }
+
+    .tituloprincipalbiografia{
+        top:-30px;
+        left:100px;
+        font-size: 65px;
+    }
+
+    .fondobiografia{
+        width: 768px;
+        top:30px;
+    }
+
+    .boton-inicio{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 60px;
+    }
+
+    .boton-canciones-1{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 220px;
+    }
+
+    .boton-galeriafotos-1{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 380px;
+    }
+
+    .boton-comentarios-1{
+        font-size: 17px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 540px;
+    }
+
+    .boton-biografia-uno{
+        font-size: 17px;
+        height:50px;
+        width:150px;
+        top: 550px;
+        left : 120px;
+    }
+
+    .boton-discografia{
+        font-size: 17px;
+        height:50px;
+        width:150px;
+        top: 550px;
+        left : 330px;
+    }
+    .boton-premiosylogros{
+        font-size: 17px;
+        height:50px;
+        width:150px;
+        top: 550px;
+        left : 540px;
+    }
+
+    .texto-biografia{
+        margin-top: 520px;
+        font-size: 17px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .foto1{
+        width: 150px;
+        height: 200px;
+    }
+
+    .foto3{
+        width: 300px;
+        height: 200px;
+    }
+
+    .foto4{
+        width: 340px;
+        height: 210px;
+    }
+
+    .foto2{
+        width: 240px;
+        height: 190px;
+    }
+
+    .boton-volver{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 2500px;
+        left : 300px;
+    }
+
+    .tituloprincipaldiscografia{
+        top:-10px;
+        left:100px;
+        font-size: 45px;
+    }
+
+    .foto22{
+        width: 200px;
+        height: 190px;
+    }
+
+    .foto23{
+        width: 200px;
+        height: 190px;
+    }
+
+    .foto24{
+        width: 200px;
+        height: 180px;
+    }
+
+    .boton-volver-discografia{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 2050px;
+        left : 300px;
+    }
+    
+    .tituloprincipaldiscografia{
+        top:-25px;
+        left:100px;
+        font-size: 60px;
+    }
+
+    .table-styled{
+        top: 650px;
+        left: 35px;
+    }
+
+    .table-styled table th,
+    .table-styled table td{
+        font-size: 16px;
+        padding: 1rem 0.5rem;
+
+    }
+
+    .boton-volver-premios{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 1750px;
+        left : 300px;
+    }
+  }
+
+/* BIOGRAGIA*/
+/*1024*/
+
+@media (min-width: 1024px){
+   
+    .logo{
+        height:90px;
+        width:90px;
+        top: 20px;
+        left : 20px;
+    }
+
+    .tituloprincipalbiografia{
+        top:0px;
+        left:115px;
+        font-size: 65px;
+    }
+
+    .fondobiografia{
+        width: 1024px;
+        top:30px;
+    }
+
+    .boton-inicio{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 370px;
+    }
+
+    .boton-canciones-1{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 530px;
+    }
+
+    .boton-galeriafotos-1{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 690px;
+    }
+
+    .boton-comentarios-1{
+        font-size: 17px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 850px;
+    }
+
+    .boton-biografia-uno{
+        font-size: 17px;
+        height:50px;
+        width:150px;
+        top: 510px;
+        left : 250px;
+    }
+
+    .boton-discografia{
+        font-size: 17px;
+        height:50px;
+        width:150px;
+        top: 510px;
+        left : 440px;
+    }
+    
+    .boton-premiosylogros{
+        font-size: 17px;
+        height:50px;
+        width:190px;
+        top: 510px;
+        left : 630px;
+    }
+
+    .texto-biografia{
+        margin-top: 520px;
+        font-size: 17px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .foto1{
+        width: 200px;
+        height: 250px;
+    }
+
+    .foto3{
+        width: 330px;
+        height: 250px;
+    }
+
+    .foto4{
+        width: 450px;
+        height: 210px;
+    }
+
+    .foto2{
+        width: 240px;
+        height: 140px;
+    }
+
+    .boton-volver{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 2050px;
+        left : 450px;
+    }
+
+    .tituloprincipaldiscografia{
+        top:5px;
+        left:110px;
+        font-size: 55px;
+    }
+
+    .foto22{
+        width: 250px;
+        height: 290px;
+    }
+
+    .foto23{
+        width: 250px;
+        height: 200px;
+    }
+
+    .foto24{
+        width: 250px;
+        height: 180px;
+    }
+
+    .boton-volver-discografia{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 1650px;
+        left : 450px;
+    }
+
+    .table-styled{
+        top: 610px;
+        left: 40px;
+    }
+
+    .table-styled table th,
+    .table-styled table td{
+        font-size: 16px;
+        padding: 1rem 1.7rem;
+
+    }
+
+    .boton-volver-premios{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 1565px;
+        left : 410px;
+    }
+  }
+/*BIOGRAFIA*/
+/*COMPLETO*/
+
+@media (min-width: 1355px){
+   
+    .logo{
+        height:90px;
+        width:90px;
+        top: 20px;
+        left : 20px;
+    }
+
+    .tituloprincipalbiografia{
+        top:0px;
+        left:200px;
+        font-size: 70px;
+    }
+
+    .fondobiografia{
+        width:1360PX; 
+        height:350PX;
+    }
+
+    .boton-inicio{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 25px;
+        left : 630px;
+    }
+
+    .boton-canciones-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 25px;
+        left : 800px;
+    }
+
+    .boton-galeriafotos-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 25px;
+        left : 975px;
+    }
+
+    .boton-comentarios-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 25px;
+        left : 1150px;
+    }
+
+    .boton-biografia-uno{
+        font-size: 18px;
+        height:50px;
+        width:200px;
+        top: 500px;
+        left : 350px;
+    }
+
+    .boton-discografia{
+        font-size: 18px;
+        height:50px;
+        width:200px;
+        top: 500px;
+        left : 600px;
+    }
+    .boton-premiosylogros{
+        font-size: 18px;
+        height:50px;
+        width:200px;
+        top: 500px;
+        left : 850px;
+    }
+
+    .texto-biografia{
+        margin-top: 480px;
+        font-size: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    .foto1{
+        width: 200px;
+        height: 300px;
+    }
+
+    .foto3{
+        width: 400px;
+        height: 300px;
+    }
+
+    .foto4{
+        width: 700px;
+        height: 230px;
+    }
+
+    .foto2{
+        width: 300px;
+        height: 190px;
+    }
+
+    .boton-volver{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 2180px;
+        left : 600px;
+    }
+
+    .tituloprincipaldiscografia{
+        top:0px;
+        left:150px;
+        font-size: 70px;
+    }
+
+    .foto22{
+        width: 300px;
+        height: 300px;
+    }
+
+    .foto23{
+        width: 350px;
+        height: 300px;
+    }
+
+    .foto24{
+        width: 350px;
+        height: 300px;
+    }
+
+    .boton-volver-discografia{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 1900px;
+        left : 600px;
+    }
+
+    .table-styled{
+        top: 600px;
+        left: 150px;
+    }
+
+    .table-styled table th,
+    .table-styled table td{
+        font-size: 20px;
+        padding: 1rem 1.58rem;
+    }
+
+    .boton-volver-premios{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 1650px;
+        left : 600px;
+    }
+  }
+
+  /*CANCIONES*/
+  /*480*/
+
+  @media (min-width: 480px) and (max-width:500px){
+    .logo1{
+        height:90px;
+        width:90px;
+        top: 20px;
+        left : 20px;
+    }
+
+    .tituloprincipalbiografia{
+        top:-10px;
+        left:100px;
+        font-size: 45px;
+    }
+
+    .fondomusica{
+        width: 451px;
+    }
+
+    .boton-inicio{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 140px;
+        left : 178px;
+    }
+
+    .boton-biografia-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 200px;
+        left : 178px;
+    }
+
+    .boton-galeriafotos-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 260px;
+        left : 178px;
+    }
+
+    .boton-comentarios-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 320px;
+        left : 178px;
+    }
+  
+    .video-1{
+        width: 350px;
+        height: 200px;
+    }
+
+    .foto8{
+        padding-left:100px;
+    }
+
+    .boton-canciones-uno{
+        font-size: 12px;
+        top: 950px;
+        left : 90px;
+    }
+
+    .boton-canciones-dos{
+        font-size: 12px;
+        top: 1010px;
+        left : 90px;
+    }
+
+    .boton-canciones-tres{
+        font-size: 12px;
+        top: 1070px;
+        left : 90px;
+    }
+}
+
+/*CANCIONES*/
+  /*768*/
+
+  @media (min-width: 768px){
+    .logo1{
+        height:90px;
+        width:90px;
+        top: 20px;
+        left : 20px;
+    }
+
+    .tituloprincipalbiografia{
+        top:-30px;
+        left:100px;
+        font-size: 65px;
+    }
+
+    .fondomusica{
+        width: 768px;
+        top:30px;
+    }
+
+    .boton-inicio{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 60px;
+    }
+
+    .boton-biografia-1{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 220px;
+    }
+
+    .boton-galeriafotos-1{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 380px;
+    }
+
+    .boton-comentarios-1{
+        font-size: 17px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 540px;
+    }
+
+
+    .video-1{
+        width: 450px;
+        height: 300px;
+    }
+
+    .foto8{
+        padding-left:100px;
+    }
+
+    .boton-canciones-uno{
+        font-size: 15px;
+        top: 990px;
+        left : 200px;
+    }
+
+    .boton-canciones-dos{
+        font-size: 15px;
+        top: 1050px;
+        left : 200px;
+    }
+
+    .boton-canciones-tres{
+        font-size: 15px;
+        top: 1110px;
+        left : 200px;
+    }
+
+    .Theerastour{
+        text-align:center;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+  
+
+/*CANCIONES*/
+  /*1024*/
+
+  @media (min-width: 1024px){
+    .logo1{
+        height:90px;
+        width:90px;
+        top: 20px;
+        left : 20px;
+    }
+
+    .tituloprincipalbiografia{
+        top:0px;
+        left:115px;
+        font-size: 65px;
+    }
+
+    .fondomusica{
+        width: 1024px;
+        top:30px;
+    }
+
+    .boton-inicio{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 370px;
+    }
+
+    .boton-biografia-1{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 530px;
+    }
+
+    .boton-galeriafotos-1{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 690px;
+    }
+
+    .boton-comentarios-1{
+        font-size: 17px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 850px;
+    }
+
+
+    .video-1{
+        width: 500px;
+        height: 310px;
+    }
+
+    .foto8{
+        padding-left:50px;
+    }
+
+    .boton-canciones-uno{
+        font-size: 15px;
+        top: 975px;
+        left : 200px;
+    }
+
+    .boton-canciones-dos{
+        font-size: 15px;
+        top: 975px;
+        left : 430px;
+    }
+
+    .boton-canciones-tres{
+        font-size: 15px;
+        top: 975px;
+        left :655px;
+    }
+
+    .Theerastour{
+        text-align:center;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+
+/*CANCIONES*/
+  /*COMPLETO*/
+
+  @media (min-width: 1355px){
+    .logo{
+        height:90px;
+        width:90px;
+        top: 20px;
+        left : 20px;
+    }
+
+    .tituloprincipalbiografia{
+        top:0px;
+        left:200px;
+        font-size: 70px;
+    }
+
+    .fondomusica{
+        width:1360PX; 
+        height:350PX;
+    }
+
+    .boton-inicio{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 25px;
+        left : 630px;
+    }
+
+    .boton-biografia-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 25px;
+        left : 800px;
+    }
+
+    .boton-galeriafotos-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 25px;
+        left : 975px;
+    }
+
+    .boton-comentarios-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 25px;
+        left : 1150px;
+    }
+
+    .video-1{
+        width: 500px;
+        height: 310px;
+    }
+
+    .foto8{
+        padding-left:50px;
+    }
+
+    .boton-canciones-uno{
+        font-size: 18px;
+        top: 1000px;
+        left : 350px;
+    }
+
+    .boton-canciones-dos{
+        font-size: 18px;
+        top: 1000px;
+        left : 600px;
+    }
+
+    .boton-canciones-tres{
+        font-size: 18px;
+        top: 1000px;
+        left : 850px;
+    }
+}
+
+/*GALERIA DE FOTOS*/
+  /*480*/
+
+  @media (min-width: 480px) and (max-width:500px){
+    .logo1{
+        height:90px;
+        width:90px;
+        top: 20px;
+        left : 20px;
+    }
+
+    .tituloprincipalbiografia{
+        top:-10px;
+        left:100px;
+        font-size: 45px;
+    }
+
+    .fondomusica{
+        width: 451px;
+    }
+
+    .boton-inicio{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 140px;
+        left : 178px;
+    }
+
+    .boton-biografia-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 200px;
+        left : 178px;
+    }
+
+    .boton-canciones-2{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 260px;
+        left : 178px;
+    }
+
+    .boton-comentarios-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 320px;
+        left : 178px;
+    }
+
+    .galeriafotos{
+        top: 500px;
+        left: 100px; 
+    }
+
+    .galeriafotos1{
+        top: 800px;
+        left: 100px; 
+    }
+
+    .galeriafotos2{
+        top: 1110px;
+        left: 100px; 
+    }
+
+    .galeriafotos3{
+        top: 1440px;
+        left: 100px; 
+    }
+
+    .galeriafotos4{
+        top: 1750px;
+        left: 100px; 
+    }
+}
+
+/*GALERIA DE FOTOS*/
+  /*768*/
+
+  @media (min-width: 768px){
+    .logo1{
+        height:90px;
+        width:90px;
+        top: 20px;
+        left : 20px;
+    }
+
+    .tituloprincipalbiografia{
+        top:-30px;
+        left:100px;
+        font-size: 65px;
+    }
+
+    .fondomusica{
+        width: 768px;
+        top:30px;
+    }
+
+    .boton-inicio{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 60px;
+    }
+
+    .boton-biografia-1{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 220px;
+    }
+
+    .boton-canciones-2{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 380px;
+    }
+
+    .boton-comentarios-1{
+        font-size: 17px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 540px;
+    }
+
+    .galeriafotos{
+        top: 550px;
+        left: 75px; 
+    }
+
+    .galeriafotos1{
+        top: 550px;
+        left: 400px; 
+    }
+
+    .galeriafotos2{
+        top: 880px;
+        left: 90px; 
+    }
+
+    .galeriafotos3{
+        top: 880px;
+        left: 400px; 
+    }
+
+    .galeriafotos4{
+        top: 1230px;
+        left: 250px; 
+    }    
+}
+
+/*GALERIA DE FOTOS*/
+  /*1024*/
+
+  @media (min-width: 1024px){
+    .logo1{
+        height:90px;
+        width:90px;
+        top: 20px;
+        left : 20px;
+    }
+
+    .tituloprincipalbiografia{
+        top:0px;
+        left:115px;
+        font-size: 65px;
+    }
+
+    .fondomusica{
+        width: 1024px;
+        top:30px;
+    }
+
+    .boton-inicio{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 370px;
+    }
+
+    .boton-biografia-1{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 530px;
+    }
+
+    .boton-canciones-2{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 690px;
+    }
+
+    .boton-comentarios-1{
+        font-size: 17px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 850px;
+    }
+
+    .galeriafotos{
+        top: 550px;
+        left: 45px; 
+    }
+
+    .galeriafotos1{
+        top: 550px;
+        left: 370px; 
+    }
+
+    .galeriafotos2{
+        top: 550px;
+        left: 695px; 
+    }
+
+    .galeriafotos3{
+        top: 880px;
+        left: 200px; 
+    }
+
+    .galeriafotos4{
+        top: 880px;
+        left: 550px; 
+    }    
+}
+
+/*GALERIA DE FOTOS*/
+  /*COMPLETA*/
+
+  @media (min-width: 1355px){
+    .logo1{
+        height:90px;
+        width:90px;
+        top: 20px;
+        left : 20px;
+    }
+
+    .tituloprincipalbiografia{
+        top:0px;
+        left:200px;
+        font-size: 70px;
+    }
+
+    .fondomusica{
+        width:1360PX; 
+        height:350PX;
+    }
+
+    .boton-inicio{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 25px;
+        left : 630px;
+    }
+
+    .boton-biografia-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 25px;
+        left : 800px;
+    }
+
+    .boton-canciones-2{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 25px;
+        left : 975px;
+    }
+
+    .boton-comentarios-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 25px;
+        left : 1150px;
+    }
+
+    .galeriafotos{
+        top: 550px;
+        left: 45px; 
+    }
+
+    .galeriafotos1{
+        top: 550px;
+        left: 370px; 
+    }
+
+    .galeriafotos2{
+        top: 550px;
+        left: 695px; 
+    }
+
+    .galeriafotos3{
+        top: 550px;
+        left: 980px; 
+    }
+
+    .galeriafotos4{
+        top: 880px;
+        left: 550px; 
+    }    
+}
+
+/*CONTACTENOS*/
+  /*480*/
+
+  @media (min-width: 480px) and (max-width:500px){
+    .logo1{
+        height:90px;
+        width:90px;
+        top: 20px;
+        left : 20px;
+    }
+
+    .tituloprincipalbiografia1{
+        top:-10px;
+        left:100px;
+        font-size: 45px;
+    }
+
+    .fondomusica{
+        width: 451px;
+        height: 290px;
+    }
+
+    .boton-inicio{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 140px;
+        left : 178px;
+    }
+
+    .boton-biografia-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 200px;
+        left : 178px;
+    }
+
+    .boton-galeriafotos-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 260px;
+        left : 178px;
+    }
+
+    .boton-musica-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 320px;
+        left : 178px;
+    }
+
+    .galeriafotos{
+        top: 500px;
+        left: 100px; 
+    }
+
+    .galeriafotos1{
+        top: 800px;
+        left: 100px; 
+    }
+
+    .galeriafotos2{
+        top: 1110px;
+        left: 100px; 
+    }
+
+    .galeriafotos3{
+        top: 1440px;
+        left: 100px; 
+    }
+
+    .galeriafotos4{
+        top: 1750px;
+        left: 100px; 
+    }
+
+    .form{
+        padding-top: 550px;
+    }
+
+    .imagenform{
+        height:160px;
+        width:160px;
+        top: 445px;
+        left : 100px;
+    }
+
+    .imagenform1{
+        height:160px;
+        width:160px;
+        top: 445px;
+        left : 250px;
+    }
+}
+
+/*CONTACTENOS*/
+  /*768*/
+
+  @media (min-width: 768px){
+    .logo1{
+        height:90px;
+        width:90px;
+        top: 20px;
+        left : 20px;
+    }
+
+    .tituloprincipalbiografia1{
+        top:-30px;
+        left:100px;
+        font-size: 65px;
+    }
+
+    .fondomusica{
+        width: 768px;
+        top:30px;
+    }
+
+    .boton-inicio{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 60px;
+    }
+
+    .boton-biografia-1{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 220px;
+    }
+
+    .boton-galeriafotos-1{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 380px;
+    }
+
+    .boton-musica-1{
+        font-size: 17px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 540px;
+    }
+
+    .form{
+        padding-top: 500px;
+        width: 500px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagenform{
+        height:160px;
+        width:160px;
+        top: 400px;
+        left : 200px;
+    }
+
+    .imagenform1{
+        height:300px;
+        width:200px;
+        top: 950px;
+        left : 600px;
+    }
+}
+
+/*CONTACTENOS*/
+  /*1024*/
+
+  @media (min-width: 1024px){
+    .logo1{
+        height:90px;
+        width:90px;
+        top: 20px;
+        left : 20px;
+    }
+
+    .tituloprincipalbiografia1{
+        top:0px;
+        left:115px;
+        font-size: 65px;
+    }
+
+    .fondomusica{
+        width: 1024px;
+        top:30px;
+    }
+
+    .boton-inicio{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 370px;
+    }
+
+    .boton-biografia-1{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 530px;
+    }
+
+    .boton-galeriafotos-1{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 690px;
+    }
+
+    .boton-musica-1{
+        font-size: 17px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 850px;
+    }
+
+    .form{
+        padding-top: 500px;
+        width: 900px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagenform{
+        height:160px;
+        width:160px;
+        top: 364px;
+        left : 350px;
+    }
+
+    .imagenform1{
+        height:400px;
+        width:300px;
+        top: 860px;
+        left : 700px;
+    }
+}
+
+/*CONTACTENOS*/
+  /*COMPLETA*/
+
+  @media (min-width: 1355px){
+    .logo1{
+        height:90px;
+        width:90px;
+        top: 20px;
+        left : 20px;
+    }
+
+    .tituloprincipalbiografia1{
+        top:0px;
+        left:110px;
+        font-size: 70px;
+    }
+
+    .fondomusica{
+        width:1360PX; 
+        height:350PX;
+    }
+
+    .boton-inicio{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 25px;
+        left : 630px;
+    }
+
+    .boton-biografia-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 25px;
+        left : 800px;
+    }
+
+    .boton-galeriafotos-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 25px;
+        left : 975px;
+    }
+
+    .boton-musica-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 25px;
+        left : 1150px;
+    }
+
+    .form{
+        padding-top: 650px;
+        width: 1300px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagenform{
+        height:160px;
+        width:160px;
+        top: 510px;
+        left : 550px;
+    }
+
+    .imagenform1{
+        height:400px;
+        width:300px;
+        top: 860px;
+        left : 900px;
+    }
+}
+
+/*NOTICIA*/
+  /*480*/
+
+  @media (min-width: 480px) and (max-width:500px){
+    .logo1{
+        height:90px;
+        width:90px;
+        top: 20px;
+        left : 20px;
+    }
+
+    .tituloprincipalbiografia1{
+        top:-10px;
+        left:100px;
+        font-size: 45px;
+    }
+
+    .fondomusica{
+        width: 451px;
+        height: 290px;
+    }
+
+    .boton-inicio{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 140px;
+        left : 178px;
+    }
+
+    .boton-biografia-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 200px;
+        left : 178px;
+    }
+
+    .boton-galeriafotos-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 260px;
+        left : 178px;
+    }
+
+    .boton-musica-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 320px;
+        left : 178px;
+    }
+
+    .titulocanciones1{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .fondonoticia{
+        width: 400px;
+        height: 300px;
+    }
+
+    .textonoticia1{
+        margin-top: 10px;
+        font-size: 17px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .boton-volver2noticias{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 1950px;
+        left : 170px;
+    }
+}
+
+/*NOTICIA*/
+  /*768*/
+
+  @media (min-width: 768px){
+    .logo1{
+        height:90px;
+        width:90px;
+        top: 20px;
+        left : 20px;
+    }
+
+    .tituloprincipalbiografia1{
+        top:-30px;
+        left:100px;
+        font-size: 65px;
+    }
+
+    .fondomusica{
+        width: 768px;
+        top:30px;
+    }
+
+    .boton-inicio{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 60px;
+    }
+
+    .boton-biografia-1{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 220px;
+    }
+
+    .boton-galeriafotos-1{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 380px;
+    }
+
+    .boton-musica-1{
+        font-size: 17px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 540px;
+    }
+
+    .titulocanciones1{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .fondonoticia{
+        width: 720px;
+        height: 400px;
+    }
+
+    .textonoticia1{
+        margin-top: 10px;
+        font-size: 17px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .boton-volver2noticias{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 1610px;
+        left : 330px;
+    }
+}
+
+/*NOTICIA*/
+  /*1024*/
+
+  @media (min-width: 1024px){
+    .logo1{
+        height:90px;
+        width:90px;
+        top: 20px;
+        left : 20px;
+    }
+
+    .tituloprincipalbiografia1{
+        top:0px;
+        left:115px;
+        font-size: 65px;
+    }
+
+    .fondomusica{
+        width: 1024px;
+        top:30px;
+    }
+
+    .boton-inicio{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 370px;
+    }
+
+    .boton-biografia-1{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 530px;
+    }
+
+    .boton-galeriafotos-1{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 690px;
+    }
+
+    .boton-musica-1{
+        font-size: 17px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 850px;
+    }
+
+    .titulocanciones1{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .fondonoticia{
+        width: 1000px;
+        height: 500px;
+    }
+
+    .textonoticia1{
+        margin-top: 10px;
+        font-size: 17px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .boton-volver2noticias{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 1550px;
+        left : 430px;
+    }
+}
+
+/*NOTICIA*/
+  /*COMPLETO*/
+
+  @media (min-width: 1355px){
+    .logo1{
+        height:90px;
+        width:90px;
+        top: 20px;
+        left : 20px;
+    }
+
+    .tituloprincipalbiografia1{
+        top:0px;
+        left:110px;
+        font-size: 70px;
+    }
+
+    .fondomusica{
+        width:1360PX; 
+        height:350PX;
+    }
+
+    .boton-inicio{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 25px;
+        left : 630px;
+    }
+
+    .boton-biografia-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 25px;
+        left : 800px;
+    }
+
+    .boton-galeriafotos-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 25px;
+        left : 975px;
+    }
+
+    .boton-musica-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 25px;
+        left : 1150px;
+    }
+
+    .titulocanciones1{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .fondonoticia{
+        width: 1300px;
+        height: 500px;
+    }
+
+    .textonoticia1{
+        margin-top: 0px;
+        font-size: 17px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .boton-volver2noticias{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 1435px;
+        left : 570px;
+    }
+}
+
+/*CALIFICANOS*/
+  /*480*/
+
+  @media (min-width: 480px) and (max-width:500px){
+    .logo1{
+        height:90px;
+        width:90px;
+        top: 20px;
+        left : 20px;
+    }
+
+    .tituloprincipalbiografia1{
+        top:-10px;
+        left:100px;
+        font-size: 45px;
+    }
+
+   
+    .boton-inicio{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 140px;
+        left : 178px;
+    }
+
+    .boton-biografia-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 200px;
+        left : 178px;
+    }
+
+    .boton-galeriafotos-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 260px;
+        left : 178px;
+    }
+
+    .boton-musica-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 320px;
+        left : 178px;
+    }
+
+    .titulocanciones1{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .rating1{
+        padding-top: 300px;
+    }
+
+    .foto18{
+        height:170px;
+        width:160px;
+        top: 220px;
+        left : 40px;
+    }
+
+    .redes-sociales-facebook1{
+        top: 100px;
+        left: 410px;
+    }
+
+    .redes-sociales-youtube1{
+        top: 160px;
+        left: 410px;
+    }
+
+    .redes-sociales-twitter1{
+        top: 220px;
+        left: 410px;
+    }
+
+    .redes-sociales-instagram1{
+        top: 280px;
+        left: 410px;
+    }
+}
+
+/*CALIFICANOS*/
+  /*768*/
+
+  @media (min-width: 768px){
+    .logo1{
+        height:90px;
+        width:90px;
+        top: 20px;
+        left : 20px;
+    }
+
+    .tituloprincipalbiografia1{
+        top:-30px;
+        left:100px;
+        font-size: 65px;
+    }
+
+    .boton-inicio{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 60px;
+    }
+
+    .boton-biografia-1{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 220px;
+    }
+
+    .boton-galeriafotos-1{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 380px;
+    }
+
+    .boton-musica-1{
+        font-size: 17px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 540px;
+    }
+
+    .titulocanciones1{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .rating1{
+        padding-top: 0px;
+    }
+
+    .foto18{
+        height:170px;
+        width:160px;
+        top: 220px;
+        left : 40px;
+    }
+
+    .redes-sociales-facebook1{
+        top: 200px;
+        left: 710px;
+    }
+
+    .redes-sociales-youtube1{
+        top: 255px;
+        left: 710px;
+    }
+
+    .redes-sociales-twitter1{
+        top: 310px;
+        left: 710px;
+    }
+
+    .redes-sociales-instagram1{
+        top: 365px;
+        left: 710px;
+    }
+}
+
+/*CALIFICANOS*/
+  /*1024*/
+
+  @media (min-width: 1024px){
+    .logo1{
+        height:90px;
+        width:90px;
+        top: 20px;
+        left : 20px;
+    }
+
+    .tituloprincipalbiografia1{
+        top:0px;
+        left:115px;
+        font-size: 65px;
+    }
+
+    .boton-inicio{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 370px;
+    }
+
+    .boton-biografia-1{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 530px;
+    }
+
+    .boton-galeriafotos-1{
+        font-size: 16px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 690px;
+    }
+
+    .boton-musica-1{
+        font-size: 17px;
+        height:50px;
+        width:150px;
+        top: 75px;
+        left : 850px;
+    }
+
+    .titulocanciones1{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .rating1{
+        padding-top: 0px;
+        padding-left: 70px;
+    }
+
+    .foto18{
+        height:300px;
+        width:220px;
+        top: 220px;
+        left : 100px;
+    }
+
+    .redes-sociales-facebook1{
+        top: 200px;
+        left: 940px;
+    }
+
+    .redes-sociales-youtube1{
+        top: 255px;
+        left: 940px;
+    }
+
+    .redes-sociales-twitter1{
+        top: 310px;
+        left: 940px;
+    }
+
+    .redes-sociales-instagram1{
+        top: 365px;
+        left: 940px;
+    }
+}
+
+/*CALIFICANOS*/
+  /*COMPLETO*/
+
+  @media (min-width: 1355px){
+    .logo1{
+        height:90px;
+        width:90px;
+        top: 20px;
+        left : 20px;
+    }
+
+    .tituloprincipalbiografia1{
+        top:0px;
+        left:110px;
+        font-size: 70px;
+    }
+
+    .boton-inicio{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 25px;
+        left : 630px;
+    }
+
+    .boton-biografia-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 25px;
+        left : 800px;
+    }
+
+    .boton-galeriafotos-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 25px;
+        left : 975px;
+    }
+
+    .boton-musica-1{
+        font-size: 18px;
+        height:50px;
+        width:150px;
+        top: 25px;
+        left : 1150px;
+    }
+
+    .titulocanciones1{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .rating1{
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+
+    .foto18{
+        height:300px;
+        width:300px;
+        top: 200px; 
+        left : 840px;
+    }
+
+    .redes-sociales-facebook1{
+        top: 500px;
+        left : 555px;
+    }
+
+    .redes-sociales-youtube1{
+        top: 500px;
+        left : 615px;
+    }
+
+    .redes-sociales-twitter1{
+        top: 500px;
+        left : 675px;
+    }
+
+    .redes-sociales-instagram1{
+        top: 500px;
+        left : 735px;
+    }
+}
